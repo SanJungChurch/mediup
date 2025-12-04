@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    
+    <link rel="stylesheet"  href="/static/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Text&display=swap" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+</head>
+<body>
+    
+    <div class="a" id="screenA">
+        <b class="eyecareapp2">EyeCareApp</b>
+        <div class="window-frame">
+            <div class="background"></div> <div class="titlebar">
+                <div class="titlebar2">
+                    <div class="grouping"></div>
+                    <b class="window-title">Notice</b>
+                </div>
+            </div>
+
+            <div class="eyecareapp">안녕하세요! <br>EyeCareApp에 오신 것을 환영합니다!</div>
+
+            <div class="push-button" id="pushButtonContainer">
+                <div class="push-button2">
+                    <div class="continue">Continue</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="b" id="screenB" style="display: none;">
+        <b class="eyecareapp2">EyeCareApp</b>
+        <div class="window-frame">
+            <div class="background"></div>
+            
+            <div class="titlebar">
+                <div class="titlebar2">
+                    <div class="grouping"></div>
+                    <b class="window-title">Notice</b>
+                </div>
+            </div>
+
+            <div class="eyecareapp">저희 EyeCareApp에서는 사용자의 <br>피로도와 스트레스를 스크리닝합니다.<br><br>하품/눈 깜빡임/거북목/시선/시거리 등<br>사용자의 여러 요소를 분석해드려요.<br><br>분석 후에는 개인 맞춤형으로<br>코칭을 제공해드릴게요!</div>
+
+            <div class="push-button" id="pushButtonContainerB">
+                <div class="push-button2">
+                    <div class="continue">Continue</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="c" id="screenC" style="display: none;">
+        <b class="eyecareapp2">EyeCareApp</b>
+        <div class="window-frame">
+            <div class="background"></div>
+            
+            <div class="titlebar">
+                <div class="titlebar2">
+                    <div class="grouping"></div>
+                    <b class="window-title">Notice</b>
+                </div>
+            </div>
+
+            <div class="eyecareapp">이제 사용해볼까요?</div>
+                <div class="push-button" id="pushButtonContainerC">
+                <div class="push-button2">
+                    <div class="continue">Continue</div>
+                </div>
+            </div>
+        </div>
+     </div>    
+
+     <div class="d" id="screenD" style="display: none;">
+        <b class="eyecareapp2">EyeCareApp</b>
+        <div class="window-frame">
+            <div class="background"></div>
+            
+            <div class="titlebar">
+                <div class="titlebar2">
+                    <div class="grouping"></div>
+                    <b class="window-title">Notice</b>
+                </div>
+            </div>
+
+            <div class="eyecareapp">EyeCareApp을 이용하기 위해서는,<br>먼저 카메라 접근에 대한 권한이 필요합니다.<br><br>허용해주시겠어요?</div>
+
+            <div class="push-button" id="pushButtonContainerD">
+                <div class="push-button2">
+                    <div class="continue">Accept</div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="e" id="screenE" style="display: none;">
+        <b class="eyecareapp2">EyeCareApp</b>
+        <div class="window-frame">
+            <div class="background"></div>
+            
+            <div class="titlebar">
+                <div class="titlebar2">
+                    <div class="grouping"></div>
+                    <b class="window-title">Notice</b>
+                </div>
+            </div>
+            
+            <div class="eyecareapp">EyeCareApp을 끊김 없이 이용하시려면<br>백그라운드 사용에 대한 허용이 필요해요.<br><br>허용해주시겠어요?</div>
+
+            <div class="push-button" id="pushButtonContainerE">
+                <div class="push-button2">
+                    <div class="continue">Accept</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="f" id="screenF" style="display: none;">
+        <b class="eyecareapp2">EyeCareApp</b>
+        <div class="window-frame">
+            <div class="background"></div>
+            
+            <div class="titlebar">
+                <div class="titlebar2">
+                    <div class="grouping"></div>
+                    <b class="window-title">Notice</b>
+                </div>
+            </div>
+
+            <div class="eyecareapp">EyeCareApp에서 드리는 조언을<br>실시간으로 받아보시겠어요?</div>
+
+            <div class="push-button" id="pushButtonContainerF">
+                <div class="push-button2">
+                    <div class="continue">Accept</div>
+                </div>
+            </div>
+            
+            <div class="push-button" id="pushButtonRejectF">
+                <div class="push-button2">
+                    <div class="continue">Reject</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="g" id="screenG" style="display: none;">
+        <b class="eyecareapp2">EyeCareApp</b>
+            <div class="push-button" id="pushButtonContainerG">
+                    <div class="push-button2">
+                        <div class="continue">START</div>
+                    </div>
+            </div>
+            <div class="sidebar-frame">
+                <div class="background"></div>
+                <img class="user-icon" src="/static/user_icon_placeholder.png" alt="User">
+                <b class="welcome-text">사용자님,<br>환영합니다.</b>
+                <div class="statistics-container">
+                    <div class="child"></div>
+                    <b class="statistics-text" id="text1">통계 보기</b>
+                    <div class="item"></div>
+                </div>
+            </div>
+    </div>
+
+    <div class="h" id="screenH" style="display: none;">
+        <b class="eyecareapp" id="eyeCareAppText">EyeCareApp</b>
+        <div class="window-frame">
+            <div class="background"></div>
+        </div>
+        
+
+        <div class="dashboard-container">
+
+            <div class="column-left">
+                <div class="section-group">
+                    <b class="section-title">지표 & 지수</b>
+                    <ul class="data-list">
+                        <li><span>피로도:</span> <span id="val-fatigue">-</span></li>
+                        <li><span>스트레스:</span> <span id="val-stress">-</span></li>
+                    </ul>
+                </div>
+
+                <div class="section-group">
+                    <b class="section-title">상세 분석 (PERCLOS)</b>
+                    <ul class="data-list small-text">
+                        <li>PERCLOS: <span id="val-perclos">-</span></li>
+                        <li>하품/분: <span id="val-yawn-rate">-</span></li>
+                        <li>자세각: <span id="val-posture">-</span></li>
+                        <li>HeadPose Var: <span id="val-headpose">-</span></li>
+                        <li>시선온: <span id="val-gaze">-</span></li>
+                        <li>근거리작업: <span id="val-near">-</span></li>
+                    </ul>
+                </div>
+
+                <div class="section-group">
+                    <b class="section-title">상태 감지 (누적)</b>
+                    <ul class="data-list small-text">
+                        <li>Blink: <span id="val-blink">-</span>회</li>
+                        <li>Yawn: <span id="val-yawn">-</span>회</li>
+                        <li>Nodding: <span id="val-nodding">-</span>회</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column-right">
+                <div class="section-group">
+                    <b class="section-title">카메라 프리뷰</b>
+                    <div class="camera-preview-box">
+                        <video id="webcam" autoplay playsinline muted></video> 
+                    </div>
+                </div>
+
+                <div class="section-group">
+                    <b class="section-title">AI 코칭 조언</b>
+                    <button id="btnGetAdvice" style="width: 100%; padding: 10px; margin-bottom: 10px; background: #5b8cff; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
+                        💬 AI와 대화하기
+                    </button>
+                    <div class="event-log-box" id="adviceBox">
+                        <p style="color: #9aa0a6;">버튼을 눌러 AI 코치와 대화해보세요!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="push-button" id="pushButtonStop">
+            <div class="push-button2">
+                <div class="continue" style="color: red;">STOP</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="i" id="screenI" style="display: none;">
+        <div class="stats-grid">
+            
+            <b class="eyecareapp2">EyeCareApp</b>
+            <b class="stats-title">사용자님의<br>통계 결과입니다.</b>
+    
+            <div class="push-button" id="pushButtonContainerI">
+                <div class="push-button2">Back</div>
+            </div>
+    
+            <div class="window-frame"></div>
+            <div class="window-frame2"></div>
+            <div class="window-frame3"></div>
+    
+            <div class="stat-card pos-1-1">
+                <canvas id="chart-perclos" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">PERCLOS</span>
+                    <span class="label-time">최근 50개</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-1-2">
+                <canvas id="chart-headpose" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">Headpose Var</span>
+                    <span class="label-time">최근 50개</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-1-3">
+                <canvas id="chart-fatigue" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">피로도</span>
+                    <span class="label-time">최근 50개</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-1-4">
+                <canvas id="chart-blink" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">Blink (누적)</span>
+                    <span class="label-time">총 횟수</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-2-1">
+                <canvas id="chart-yawn-rate" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">하품/분</span>
+                    <span class="label-time">최근 50개</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-2-2">
+                <canvas id="chart-gaze" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">시선온</span>
+                    <span class="label-time">최근 50개</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-2-3">
+                <canvas id="chart-stress" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">스트레스</span>
+                    <span class="label-time">최근 50개</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-2-4">
+                <canvas id="chart-yawn" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">Yawn (누적)</span>
+                    <span class="label-time">총 횟수</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-3-2">
+                <canvas id="chart-near" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">근거리작업</span>
+                    <span class="label-time">최근 50개</span>
+                </div>
+            </div>
+    
+            <div class="stat-card pos-3-4">
+                <canvas id="chart-nodding" class="graph-frame"></canvas>
+                <div class="label-row">
+                    <span class="label-name">Nodding (누적)</span>
+                    <span class="label-time">총 횟수</span>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="j" id="screenJ" style="display: none;">
+        <b class="eyecareapp2">EyeCareApp</b>
+        
+        <div class="chat-container">
+            <div class="chat-header">
+                <button id="btnBackToMonitor" class="back-btn">← 모니터링</button>
+                <b class="chat-title">💡 AI 웰빙 코치</b>
+                <button id="btnNewChat" class="new-chat-btn">🔄 새 대화</button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <p>안녕하세요! 👋</p>
+                    <p>저는 여러분의 디지털 웰빙을 도와드리는 AI 코치입니다.</p>
+                    <p>아래 버튼을 눌러 현재 상태 분석을 시작하거나, 궁금한 점을 물어보세요!</p>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <button id="btnAnalyze" class="analyze-btn">📊 현재 상태 분석하기</button>
+                <div class="input-row">
+                    <input type="text" id="chatInput" placeholder="궁금한 점을 물어보세요..." />
+                    <button id="btnSend" class="send-btn">전송</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "title": "디지털 눈피로 가이드",
+    "path": "rag/docs/guide_des.md"
+  },
+  {
+    "id": 1,
+    "title": "거북목 예방 체크리스트",
+    "path": "rag/docs/neck_checklist.md"
+  },
+  {
+    "id": 2,
+    "title": "작업거리/조명 권장",
+    "path": "rag/docs/distance_lighting.md"
+  }
+]

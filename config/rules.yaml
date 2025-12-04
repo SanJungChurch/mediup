@@ -1,0 +1,17 @@
+window_sec: 60
+on_screen_cone_deg: 15
+near_work_cm: 40
+thresholds:
+  ear_close_scale: 0.65
+  ear_open_delta: 0.03
+  yawn_mar: 0.60
+  yawn_min_ms: 800
+  nod_pitch_hz_min: 0.5
+  nod_pitch_hz_max: 2.0
+  nod_pitch_amp_deg: 8
+weights:
+  fatigue: {perclos:40, yawn:25, near:15, nod:10, gaze_on:-10}
+  stress: {posture:30, headvar:25, near:20, tension:15, blinkvar:10}
+alert_levels:
+  warn: 60
+  danger: 80

@@ -1,0 +1,30 @@
+server:
+  host: 0.0.0.0
+  port: 8000
+
+camera:
+  id: 0
+  width: 640
+  height: 480
+  fps: 20  # 사용자 선택 가능 (15/20/30)
+  max_num_faces: 3  # vis_test 기능: 다중 얼굴 감지
+
+vision:
+  # vis_test 기반 고급 기능
+  use_pnp_headpose: true  # PnP 알고리즘 기반 정확한 머리 자세
+  use_target_tracking: true  # 다중 얼굴 중 1인 타겟 추적
+  use_brightness_check: true  # 조도 측정
+  use_quality_gating: true  # 품질 기반 필터링
+  
+  # 캘리브레이션 (vis_test 상수)
+  focal_length_px: 750  # 카메라 초점거리 (자동 캘리브레이션 가능)
+  known_ipd_cm: 6.3  # 평균 눈 사이 거리
+  
+  # 임계값 (FPS에 따라 자동 조정)
+  adaptive_thresholds: true
+  ear_threshold: 0.2
+  mar_threshold: 0.65
+  
+performance:
+  mode: "balanced"  # power_saving / balanced / accuracy
+  adaptive_fps: false  # true 시 이벤트 발생 시 FPS 자동 부스트
